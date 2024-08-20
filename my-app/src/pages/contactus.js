@@ -14,13 +14,24 @@ function ContactForm() {
   return (
     <div className="container mx-auto p-4">
       {/* Contact Us Heading */}
-      <h1 className="text-4xl mb-8 text-center font-bold text-gray-800">
+      <h1 className="text-4xl mb-6 text-center font-bold text-gray-800">
         Contact Us
       </h1>
+
+      {/* Additional Message with Styling */}
+      <div className="text-center mb-8">
+        <div className="border-t border-blue-500 mb-4"></div> {/* Blue line above the message */}
+        <p className="text-blue-600 text-lg font-semibold">
+          Happy to serve you! Send us your technical requirements
+        </p>
+        <div className="border-t border-blue-500 mt-4"></div> {/* Blue line below the message */}
+      </div>
+
+      {/* Contact Form */}
       <div className="flex justify-center">
         <form
           onSubmit={handleSubmit}
-          className="bg-white rounded-lg px-8 pt-6 pb-8 mb-4 max-w-xl w-full" // Increased width
+          className="bg-blue rounded-lg px-8 pt-6 pb-8 mb-8 max-w-lg w-full"
         >
           {/* Name Input */}
           <div className="mb-6">
@@ -87,6 +98,49 @@ function ContactForm() {
           </div>
         </form>
       </div>
+
+      {/* Contact Details */}
+      <div className="text-center mb-8">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          Better yet, see us in person!
+        </h2>
+        <p className="text-gray-700 mb-4">
+          For any technical requirement, feel free to contact us:
+        </p>
+        <p className="text-blue-600 mb-4">
+          <a href="mailto:contact@techintime.co.in">contact@techintime.co.in</a>
+        </p>
+        <p className="text-blue-600 mb-4">
+          <a href="tel:+919289199700">+91 92891 99700</a>
+        </p>
+        <a
+          href="https://wa.me/919289199700"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-4 py-2 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-700"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+            alt="WhatsApp Logo"
+            className="w-5 h-5 mr-2"
+          />
+          Message us on WhatsApp
+        </a>
+        <h1 className="text-2xl font-bold text-blue-600  mt-9 font-semibold">
+          Techintime Enterprises (OPC) Pvt Ltd.
+          </h1>
+
+          <p>
+          Regd Office: 16 GF, Lilac-2, Sector 49, Gurugram - 122018, Haryana, India
+        </p>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white text-center py-4 mt-8">
+        <p className="text-sm">
+          Copyright © 2024 TECHinTIME Enterprises (OPC) Pvt Ltd - All Rights Reserved.
+        </p>
+      </footer>
     </div>
   );
 }

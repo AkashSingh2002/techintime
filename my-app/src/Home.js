@@ -42,6 +42,10 @@ const Home = () => {
           <h1 className="text-3xl font-bold">Welcome to TECHinTIME</h1>
           <p className="mt-2 text-lg">Explore our Products and Services.</p>
         </div>
+        <div className="absolute bottom-0 left-0 w-full p-4 text-center bg-white bg-opacity-75">
+          <h1 className="text-3xl font-bold">Description about the products</h1>
+          <p className="mt-2 text-lg">Explore our Products and Services.</p>
+        </div>
       </div>
 
       {/* Contact Us Section */}
